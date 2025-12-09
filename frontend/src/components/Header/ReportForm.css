@@ -1,0 +1,23 @@
+
+/* ReportForm.css */
+.map-preview {
+  transition: all 0.3s ease;
+}
+
+.map-preview:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pac-container {
+  z-index: 1050 !important;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.required-field::after {
+  content: " *";
+  color: #dc3545;
+}
