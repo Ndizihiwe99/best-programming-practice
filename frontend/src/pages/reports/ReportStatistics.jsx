@@ -51,12 +51,12 @@ import {
   Refresh as RefreshIcon,
   CalendarToday as CalendarIcon,
 } from "@mui/icons-material";
-import { format, subMonths, startOfMonth, endOfMonth, subDays } from "date-fns";
+import { format, subMonths, subDays } from "date-fns";
 import { apiService } from "../../services/api";
 import { useAuth } from "../../context/AuthContext";
 
 const ReportStatistics = () => {
-  const { user } = useAuth();
+  useAuth();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [timeRange, setTimeRange] = useState("month");
